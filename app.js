@@ -1,9 +1,8 @@
-const add = require('./utils.js')
+const validator = require('validator')
+const getNotes = require('./notes.js')
 
-// fs.writeFileSynch('notes.txt', 'This file was created by Node.js')
+const msg = getNotes()
 
-// fs.appendFileSync('notes.txt', ' I live in California');
+console.log(msg)
 
-const sum = add (4, -2)
-
-console.log(sum)
+console.log(validator.isEmail('phan_van05@yahoo.com'))
